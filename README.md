@@ -14,7 +14,7 @@
 |--- request.http
 ```
 
-### Establish Docker container by integrating with project file in host directory
+### Establish Docker container and integrate with project file in host directory
 1. type `docker run --rm -it -v ${pwd}:/go/src/app -w /go/src/app -p 3000:3000 golang:1.12`
 2. to check whether you have bind the volume correctly or not, type `ls`
 3. you should see your local project files inside there
