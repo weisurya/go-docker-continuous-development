@@ -59,6 +59,7 @@ Command | Explanation
 1. To know more about dlv CLI command, check [here](https://github.com/go-delve/delve/blob/master/Documentation/usage/dlv.md)
 2. To know more about VSCode debugging, especially in Go, check [here](https://github.com/Microsoft/vscode-go/wiki/Debugging-Go-code-using-VS-Code)
 
+___
 ### Separate Docker image between base, debug, and production purpose
 1. Create the base image on `Dockerfile.base`. The purpose of this Dockerfile is to build the standard environment that could be applicable for debug and production
 2. Create the debugging-purpose image on `Dockerfile.debug`. We do not need to have unrelated packages for production, such as `go-delve` (for debugging purpose) and exposing a new port, which may harm your container.
