@@ -1,0 +1,6 @@
+FROM golang:1.12 
+
+# Set the environment variables for the go command:
+# * CGO_ENABLED=0 to build a statically-linked executable
+# * GOFLAGS=-mod=vendor to force `go build` to look into the `/vendor` folder.
+ENV CGO_ENABLED=0 GO111MODULE=on
