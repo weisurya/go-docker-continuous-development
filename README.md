@@ -21,15 +21,15 @@
 4. run `go run main.go`
 
 **Explanation regarding the Docker command**
-Command | Explanation 
---- | ---
-docker run | to create a new Docker container
---rm | delete container after exit, for sanity purpose
--it | to enable interactive mode
--v ${pwd}:/go/src/app | to mount bind between local directory and container directory
--w | to change into a specific directory inside container
--p 3000:3000 | to set inbound-outbound port
-golang:1.12 | base image
+| Command               | Explanation                                                     |
+| :-------------------- | :-------------------------------------------------------------- |
+| docker run            | to create a new Docker container                                |
+| --rm                  | delete container after exit, for sanity purpose                 |
+| -it                   | to enable interactive mode                                      |
+| -v ${pwd}:/go/src/app | to mount bind between local directory and container directory   |
+| -w                    | to change into a specific directory inside container            |
+| -p 3000:3000          | to set inbound-outbound port                                    |
+| golang:1.12           | base image                                                      |
 
 ___
 ### Use Debug module from VSCode
@@ -49,11 +49,11 @@ ___
 10. Run your debugger and start to place your breakpoint
 
 **Explanation regarding the Docker command**
-Command | Explanation 
---- | ---
--d | detach, so you will not be directed into the container's CLI
--p 1234:1234 | open up another port for debugging purpose
---security-opt=seccomp:unconfined | in order to let dlv run into your container, you need to allow it by without using default secure computing mode (seccomp) profile
+| Command                           | Explanation                                                                                                                          |
+| :-------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------- |
+| -d                                | detach, so you will not be directed into the container's CLI                                                                         |
+| -p 1234:1234                      | open up another port for debugging purpose                                                                                           |
+| --security-opt=seccomp:unconfined | in order to let dlv run into your container, you need to allow it by without using default secure computing mode (seccomp) profile   |
 
 **Additional explanation about Debug step**
 1. To know more about dlv CLI command, check [here](https://github.com/go-delve/delve/blob/master/Documentation/usage/dlv.md)
