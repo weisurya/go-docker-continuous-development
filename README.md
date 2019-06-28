@@ -21,6 +21,7 @@
 4. run `go run main.go`
 
 **Explanation regarding the Docker command**
+
 | Command               | Explanation                                                     |
 | :-------------------- | :-------------------------------------------------------------- |
 | docker run            | to create a new Docker container                                |
@@ -49,6 +50,7 @@ ___
 10. Run your debugger and start to place your breakpoint
 
 **Explanation regarding the Docker command**
+
 | Command                           | Explanation                                                                                                                          |
 | :-------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------- |
 | -d                                | detach, so you will not be directed into the container's CLI                                                                         |
